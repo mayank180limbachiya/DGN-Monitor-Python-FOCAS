@@ -48,8 +48,8 @@ o	For Auto by Time Interval(Time)
 •	Time to Run (In Min)
 •	Time Interval (In sec)
 •	Select CSV file to store via selecting button. 
- 
-	 Note: 
+
+Note: 
 o	You can only select CSV file, you need to create one first.
 o	If selected file having some data that will be erased then its will start capturing data
 o	At Every Selection of csv file already stored data will be erased. Do not open file during Auto or manual entry.
@@ -76,7 +76,18 @@ o	For auto by interval no need change at CNC. It will take data at time interval
  
 
 DGN CAN BE MONITORED
-
+In DGN	In Axis 	    CNC of with axis		Data condition
+______________________________________________________________________
+319 ( Axis  example) #   1 = X2 = Y3 = Z	# 	Output as value in cnc
+411 ( SP Example)	 #   1 = S1 2 = S2	 	#	Output as value in cnc
+45 (without Axis)    #   0 or -1	 	    #  	Output as value in cnc
+1007 without Axis/SP)#	0 or -1	 	        #   Output as Decimal
+1774                 # 	1,2,3 = x,y,z       #   Output as Decimal
+1775                 #   1,2=s1 s           #   Output as Decimal
+ 
+Note 
+: "-"Negative DGN Value , 0.000 DGN Value, Hexa DGN Value will Be not Ok Value
+: Desimal Vaule, Bit value (As Decimal) will be GOOD Condition.
 
 
 •	For Auto By R Mode: PMC example 
